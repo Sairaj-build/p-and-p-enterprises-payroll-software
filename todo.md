@@ -1,0 +1,33 @@
+# EMPPAY Desktop TODO
+
+- [x] Create standalone Electron Windows application shell
+- [x] Add local JSON data persistence in the Electron user-data directory
+- [x] Add safe preload bridge for database, workbook, export, and backup operations
+- [x] Add Excel/CSV workbook import and common payroll-column mapping
+- [x] Add employee master with masked UAN and bank identifiers
+- [x] Add attendance, overtime, payroll rules, payroll calculation, payslips, reports, and backup screens
+- [x] Add Windows installer configuration with electron-builder
+- [x] Add Windows startup and build documentation
+- [x] Add local operator PIN/password login and role controls
+- [x] Add dynamic salary components & category benchmark structure catalog
+- [x] Add comprehensive attendance & leave module with CL/PL/SL/OL/LOP and payability engine
+- [x] Add Payment Mode support (Bank, Cash, Cheque) with Combine/Separate handling
+- [x] Add Loan Management module with automatic deduction and schedule logging
+- [x] Add Arrears Management module with retroactive and payment month handling
+- [x] Add Bonus Module with Payment of Bonus Act computations & statements
+- [x] Add effective-dated Payroll Rule Versioning & immutable finalized snapshots
+- [x] Add pre-finalization integrity validation checklist
+- [x] Add comprehensive Categorized Report Center (Payroll, Statutory, Payment, Additional)
+- [x] Add direct Excel (.xlsx) and CSV exports and print stylesheets
+- [x] Add 26th-previous to 25th-current statutory payroll cycle calculation engine with automated Sunday/leave/payable days reckoning
+- [x] Add dedicated Employee Statutory Details section (PF/UAN, PF Code, rates, ESIC IP, ESIC rates, PAN, Aadhaar, Bank) with Master editing & Profile integration
+- [x] Add dedicated Statutory Reports selector (PF, ESIC, PT, MLWF, Other) with EPFO standard format statement and bold totals
+- [x] Add configurable statutory rates, ceilings (PF ₹15k, ESIC ₹21k), and MLWF rules in Payroll Rules
+- [x] Add high-resolution WhatsApp Payslip image generation with clipboard copy and direct chat dispatch
+- [x] Eliminate UI hanging and lagging: fixed undefined variable references, added payroll cycle caching, input debouncing, and crash-proof navigation switch
+- [x] Add dedicated Statutory / Compliance Details section in Employee Master with selectable options (PF, ESIC, PT, LWF, Other Statutory Deductions)
+- [x] Add scrollable employee list browser in Employee Master with typo-tolerant / fuzzy search, site and category filtering, and 1-click selection
+- [x] Add live computed employee & employer contributions, statutory ceilings, rates, and EPFO/ESIC/PT/LWF return readiness
+- [x] Add dedicated Statutory Editor modal for quick in-place modification of statutory attributes and KYC
+- [x] Add comprehensive 1-click printable Statutory Compliance Profile & Dossier for audits and inspections
+- [x] Run automated test suites and verify 100% calculation compliance across all 17 automated tests

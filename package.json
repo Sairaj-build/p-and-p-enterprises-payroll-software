@@ -1,0 +1,54 @@
+{
+  "name": "emppay-desktop",
+  "version": "1.0.0",
+  "description": "Standalone employee payroll desktop software",
+  "main": "main.cjs",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build:win": "electron-builder --win nsis"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.pandp.enterprises",
+    "productName": "P & P Enterprises",
+    "artifactName": "${productName} Setup ${version}.${ext}",
+    "compression": "normal",
+    "asar": true,
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "index.html",
+      "app.js",
+      "styles.css",
+      "logo.jpg",
+      "icon.ico",
+      "icon.png",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "installerHeaderIcon": "icon.ico",
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "P & P Enterprises",
+      "uninstallDisplayName": "P & P Enterprises",
+      "differentialPackage": false
+    }
+  }
+}
